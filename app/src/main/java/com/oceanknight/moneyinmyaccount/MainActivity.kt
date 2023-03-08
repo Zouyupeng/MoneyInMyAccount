@@ -6,6 +6,7 @@ import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import com.oceanknight.moneyinmyaccount.ui.page.HomeEntry
+import com.oceanknight.moneyinmyaccount.ui.theme.ExamplesTheme
 
 class MainActivity : ComponentActivity() {
 
@@ -14,7 +15,10 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            HomeEntry(num)
+            ExamplesTheme{
+                HomeEntry("Oceanknight", "Compose 学习中")
+            }
+
         }
     }
 }
