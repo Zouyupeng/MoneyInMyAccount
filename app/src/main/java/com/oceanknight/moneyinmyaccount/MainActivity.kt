@@ -14,7 +14,7 @@ class MainActivity : ComponentActivity() {
         MessageCard("Oceanknight", "Kotlin学习中"),
         MessageCard("Oceanknight", "Espresso学习中"),
         MessageCard("Oceanknight", "Compose学习中\n\n\n换行*3"),
-        MessageCard("Oceanknight", "Compose学习中，长出一点"),
+        MessageCard("Oceanknight", "Compose学习中，长出一点点"),
         MessageCard("Oceanknight", "Compose学习中"),
         MessageCard("Oceanknight", "Compose学习中"),
         MessageCard("Oceanknight", "Compose学习中"),
