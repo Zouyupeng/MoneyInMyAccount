@@ -1,22 +1,32 @@
 package com.oceanknight.moneyinmyaccount
 
 import android.os.Bundle
-import android.util.Log
-import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import com.oceanknight.moneyinmyaccount.ui.page.HomeEntry
+import com.oceanknight.moneyinmyaccount.ui.page.Conversation
+import com.oceanknight.moneyinmyaccount.ui.page.MessageCard
 import com.oceanknight.moneyinmyaccount.ui.theme.ExamplesTheme
 
 class MainActivity : ComponentActivity() {
 
-    var num = 1;
+    var messages = mutableListOf(
+        MessageCard("Oceanknight", "Compose学习中"),
+        MessageCard("Oceanknight", "Kotlin学习中"),
+        MessageCard("Oceanknight", "Espresso学习中"),
+        MessageCard("Oceanknight", "Compose学习中\n\n\n换行*3"),
+        MessageCard("Oceanknight", "Compose学习中，长出一点"),
+        MessageCard("Oceanknight", "Compose学习中"),
+        MessageCard("Oceanknight", "Compose学习中"),
+        MessageCard("Oceanknight", "Compose学习中"),
+        MessageCard("Oceanknight", "Compose学习中"),
+        MessageCard("Oceanknight", "Compose学习中"),)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         setContent {
             ExamplesTheme{
-                HomeEntry("Oceanknight", "Compose 学习中")
+                Conversation(messages)
             }
 
         }
