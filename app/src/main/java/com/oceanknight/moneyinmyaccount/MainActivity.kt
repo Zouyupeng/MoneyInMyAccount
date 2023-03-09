@@ -3,6 +3,7 @@ package com.oceanknight.moneyinmyaccount
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import com.oceanknight.moneyinmyaccount.ui.component.ReplayNavigation
 import com.oceanknight.moneyinmyaccount.ui.component.TopNavigationBarItem
 import com.oceanknight.moneyinmyaccount.ui.page.MessageList
 import com.oceanknight.moneyinmyaccount.ui.theme.ExamplesTheme
@@ -16,7 +17,8 @@ class MainActivity : ComponentActivity() {
         setContent {
             ExamplesTheme{
 //                MessageList()
-                TopNavigationBarItem()
+//                TopNavigationBarItem()
+                ReplayNavigation()
             }
 
         }
